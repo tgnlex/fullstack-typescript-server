@@ -1,0 +1,39 @@
+{
+  "name": "ts-server",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "tsx ./src/main.ts",
+    "dev": "tsx --watch ./src/main.ts",
+    "lint": "tsx ./config/linter.ts",
+    "check": "tsc --noEmit",
+    "sass": "sass ./src/frontend/style/* ./static/style/",
+    "sass:watch": "sass --watch ./src/frontend/style* ./static/style/* ",
+    "test": "mocha --config .mocharc.json",
+    "compile": "pkgroll",
+    "build": ["npm run compile", "npm run sass" ],
+    "make": [ "npm run check", "npm run lint", "npm run compile" ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/jake": "^0.0.36",
+    "@types/lowdb": "^1.0.15",
+    "@types/node": "^22.0.0",
+    "jake": "^10.9.2",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "lowdb": "^7.0.1",
+    "morgan": "^1.10.0",
+    "pkgroll": "^2.4.2",
+    "vitest": "^2.0.4"
+  }
+}

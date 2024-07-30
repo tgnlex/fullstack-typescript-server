@@ -1,0 +1,8 @@
+{
+  "users": [
+    {"id": 1, "username"": "test_user", "email": "user@email.com", "password": "testpass"}
+  ],
+  "posts": [
+     {"id": 1, "title": "test",  "content": "this is a test post", "date": "7-29-24", "views": "0"},
+  ],
+}
