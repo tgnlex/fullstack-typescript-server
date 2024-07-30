@@ -12,8 +12,15 @@
     "sass:watch": "sass --watch ./src/frontend/style* ./static/style/* ",
     "test": "mocha --config .mocharc.json",
     "compile": "pkgroll",
-    "build": ["npm run compile", "npm run sass" ],
-    "make": [ "npm run check", "npm run lint", "npm run compile" ]
+    "build": [
+      "npm run compile",
+      "npm run sass"
+    ],
+    "make": [
+      "npm run check",
+      "npm run lint",
+      "npm run compile"
+    ]
   },
   "keywords": [],
   "author": "",
@@ -34,6 +41,7 @@
     "lowdb": "^7.0.1",
     "morgan": "^1.10.0",
     "pkgroll": "^2.4.2",
+    "tsconfig-paths": "^4.2.0",
     "vitest": "^2.0.4"
   }
 }
