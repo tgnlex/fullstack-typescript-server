@@ -1,9 +1,8 @@
-import server from './app/index.ts';
-
+import api from './api/api.ts';
+console.info(`Main loaded`)
 
 const main = async () => {
-  console.info(`[MAIN]: Starting main loop...`)
-  server();
+  api();
 }
 
 main();
